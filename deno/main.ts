@@ -40,4 +40,4 @@ async function handler(req: Request): Promise<Response> {
   return new Response("Not Found", { status: 404 });
 }
 
-serve(handler, { port: 8000 });
+Deno.serve(handler);
